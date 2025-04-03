@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="512" cy="512" r="512" fill="url(#gradient)"/>
+  
+  <!-- 渐变定义 -->
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="1024" y2="1024">
+      <stop offset="0%" stop-color="#8E2DE2"/>
+      <stop offset="100%" stop-color="#4A00E0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 时钟外圈 -->
+  <circle cx="512" cy="512" r="400" stroke="white" stroke-width="40" fill="none"/>
+  
+  <!-- 时钟刻度 -->
+  <g stroke="white" stroke-width="25">
+    <!-- 12点刻度 -->
+    <line x1="512" y1="112" x2="512" y2="162" stroke-linecap="round"/>
+    <!-- 3点刻度 -->
+    <line x1="862" y1="512" x2="812" y2="512" stroke-linecap="round"/>
+    <!-- 6点刻度 -->
+    <line x1="512" y1="912" x2="512" y2="862" stroke-linecap="round"/>
+    <!-- 9点刻度 -->
+    <line x1="162" y1="512" x2="212" y2="512" stroke-linecap="round"/>
+  </g>
+  
+  <!-- 哑铃图标 -->
+  <g transform="translate(512, 512) rotate(45)">
+    <!-- 哑铃杆 -->
+    <rect x="-180" y="-25" width="360" height="50" rx="25" fill="white"/>
+    <!-- 左侧哑铃片 -->
+    <circle cx="-200" cy="0" r="70" fill="white"/>
+    <!-- 右侧哑铃片 -->
+    <circle cx="200" cy="0" r="70" fill="white"/>
+  </g>
+  
+  <!-- 时钟指针 -->
+  <g transform="translate(512, 512)">
+    <!-- 时针 -->
+    <line x1="0" y1="0" x2="0" y2="-180" stroke="white" stroke-width="40" stroke-linecap="round"/>
+    <!-- 分针 -->
+    <line x1="0" y1="0" x2="180" y2="0" stroke="white" stroke-width="30" stroke-linecap="round"/>
+  </g>
+</svg> 
